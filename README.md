@@ -25,3 +25,4 @@ FUTURE ITERATIONS:
 - Add favicon.
 - Display click counter at all times.
 - Change font color and sizing of image license link.
+- Make CSS more concise by cascading IDs and CLASSES rather than repeating myself.
