@@ -3,16 +3,21 @@
 }
 
 #heading {
-	color: #c1b066;
+	font-size: 45px;
 	/*color: #4a530d;*/
 	text-align: center;
 }
 
 .pirate-scrawl {
 	font-family: 'Homemade Apple', cursive;
+	color: #c1b066;
 }
 
 #map {
 	width: 650px;
 	height: 576px;
+}
+
+#distance {
+	font-size: 28px;
 }

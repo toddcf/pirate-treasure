@@ -12,19 +12,19 @@ var getDistance = function(event, target) {
 
 // Determine which hint to give:
 var getDistanceHint = function(distance) {
-	if (distance < 10) {
+	if (distance < 40) {
 		return "Boiling hot!";
 	}
-	else if (distance < 20) {
+	else if (distance < 80) {
 		return "Really hot!";
 	}
-	else if (distance < 40) {
+	else if (distance < 120) {
 		return "Hot!";
 	}
-	else if (distance < 80) {
+	else if (distance < 160) {
 		return "Warm . . .";
 	}
-	else if (distance < 160) {
+	else if (distance < 200) {
 		return "Cold.";
 	}
 	else if (distance < 320) {
@@ -56,7 +56,7 @@ $("#map").click(function (event) {
 	// Update #distance hint in HTML:
 	$("#distance").text(distanceHint);
 	// If within 8px, alert player that they won:
-	if (distance <= 8) {
+	if (distance <= 20) {
 		$("#distance").text("YOU'RE RICH!!! YOU FOUND THE TREASURE in " + clicks + " clicks!!!");
 	}
 });
