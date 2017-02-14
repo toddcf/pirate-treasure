@@ -5,6 +5,11 @@
 #heading {
 	color: #c1b066;
 	/*color: #4a530d;*/
+	text-align: center;
+}
+
+.pirate-scrawl {
+	font-family: 'Homemade Apple', cursive;
 }
 
 #map {
