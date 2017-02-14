@@ -2,13 +2,10 @@
 
 GAME RULES:
 
-- Enter the number of points you wish to be the winning score. (If no points are entered, default winning score is 100.)
-- In each turn, a player rolls the dice as many times as they wish.  Each result gets added to their ROUND score.
-- The player can choose to 'Hold', which means that their ROUND score gets added to their GLOBAL score.  After that, it's the next player's turn.
-- BUT...
-  - If the player rolls a 1, their ROUND score is reset to zero and it's the next player's turn.
-  - If the player rolls two sixes, both their ROUND score and GLOBAL score are reset to zero and it's the next player's turn.
-- The first player to reach 100 points (or whatever you've set it to) in their GLOBAL score wins the game.
+- There is pirate treasure buried SOMEWHERE in this vicinity. Guess where it is, and click on that area of the map.
+- You will receive a clue as to how hot, warm, or cold you are.
+- Keep clicking on the map as you zero in on the treasure's location.
+- When you find the treasure, be sure drop me a line and thank me for 
 
 NEW CODING SKILLS LEARNED:
 
@@ -26,3 +23,4 @@ FUTURE ITERATIONS:
 - Add a "Start New Game" button.
 - Add favicon.
 - Display click counter at all times.
+- Change font color and sizing of image license link.
