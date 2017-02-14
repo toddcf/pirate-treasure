@@ -38,3 +38,15 @@ var getDistanceHint = function(distance) {
 var width 	= 651;
 var height 	= 577;
 var clicks	= 0;
+
+// Create an object for random target location and store it in TARGET variable:
+var target = {
+	x: getRandomNumber(width),
+	y: getRandomNumber(height)
+};
+
+// Click event handler for the map image:
+$("#map").click(function (event) {
+	// Increment click counter:
+	clicks++;
+});
