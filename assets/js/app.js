@@ -35,8 +35,8 @@ var getDistanceHint = function(distance) {
 	}
 };
 
-var width 	= 651;
-var height 	= 577;
+var width 	= 736;
+var height 	= 653;
 var clicks	= 0;
 
 // Create an object for random target location and store it in TARGET variable:
@@ -56,7 +56,10 @@ $("#map").click(function (event) {
 	// Update #distance hint in HTML:
 	$("#distance").text(distanceHint);
 	// If within 8px, alert player that they won:
-	if (distance <= 20) {
+	if ((distance <= 20) && (clicks === 1)) {
+		$("#distance").text("YOU MUST HAVE ESP!!! YOU FOUND THE TREASURE in only one click!!!");
+	}
+	else if ((distance <= 20) && (clicks < 1)) {
 		$("#distance").text("YOU'RE RICH!!! YOU FOUND THE TREASURE in " + clicks + " clicks!!!");
 	}
 });

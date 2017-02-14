@@ -4,8 +4,8 @@
 
 #heading {
 	font-size: 45px;
-	/*color: #4a530d;*/
 	text-align: center;
+	padding: 20px;
 }
 
 .pirate-scrawl {
@@ -14,10 +14,15 @@
 }
 
 #map {
-	width: 650px;
-	height: 576px;
+	/*width: 650px;*/
+	/*height: 576px;*/
+}
+
+#copyright {
+	color: #c1b066;
 }
 
 #distance {
 	font-size: 28px;
+	padding: 20px;
 }
