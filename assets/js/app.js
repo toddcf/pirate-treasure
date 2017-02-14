@@ -49,4 +49,14 @@ var target = {
 $("#map").click(function (event) {
 	// Increment click counter:
 	clicks++;
+	// Get distance between click and target:
+	var distance = getDistance(event, target);
+	// Convert distance to hint:
+	var distanceHint = getDistanceHint(distance);
+	// Update #distance hint in HTML:
+	$("#distance").text(distanceHint);
+	// If within 8px, alert player that they won:
+	if (distance <= 8) {
+		$("#distance").text("YOU'RE RICH!!! YOU FOUND THE TREASURE in " + clicks + " clicks!!!");
+	}
 });
