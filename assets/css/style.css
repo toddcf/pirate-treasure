@@ -1,0 +1,13 @@
+* {
+	background-color: black;
+}
+
+#heading {
+	color: #c1b066;
+	/*color: #4a530d;*/
+}
+
+#map {
+	width: 650px;
+	height: 576px;
+}
