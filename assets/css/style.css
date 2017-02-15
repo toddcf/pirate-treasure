@@ -6,9 +6,12 @@
 	color: #c1b066;
 }
 
+.text-center {
+	text-align: center;
+}
+
 #heading {
 	font-size: 45px;
-	text-align: center;
 	padding: 20px;
 }
 
@@ -24,16 +27,11 @@
 .game-text {
 	width: 600px;
 	height: 100px;
-	text-align: center;
 }
 
 button {
 	margin: 0 auto;
 	display: block;
-}
-
-#clue-header {
-	text-align: center;
 }
 
 .clues {
@@ -49,7 +47,7 @@ button {
 	margin: 0 auto;
 }
 
-.copyright {
+.license {
 	font-size: 12px;
 }
 
@@ -60,5 +58,4 @@ button {
 
 .footer-text {
 	font-size: 15px;
-	text-align: center;
 }
