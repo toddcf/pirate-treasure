@@ -14,15 +14,15 @@
 }
 
 #map {
-	/*width: 650px;*/
-	/*height: 576px;*/
+	width: 735px;
+	height: 652px;
 }
 
 .copyright {
 	color: #c1b066;
 }
 
-#distance {
+#distance, #attempts {
 	font-size: 28px;
 	padding: 20px;
 }

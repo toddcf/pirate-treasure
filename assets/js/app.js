@@ -7,6 +7,7 @@ var getRandomNumber = function(size) {
 var getDistance = function(event, target) {
 	var diffX = event.offsetX - target.x;
 	var diffY = event.offsetY - target.y;
+	console.log("diffX: " + diffX + ", diffY: " + diffY);
 	return Math.sqrt((diffX * diffY) + (diffX * diffY));
 };
 
@@ -25,13 +26,13 @@ var getDistanceHint = function(distance) {
 		return "Warm . . .";
 	}
 	else if (distance < 200) {
-		return "Cold.";
+		return "Cold";
 	}
 	else if (distance < 320) {
 		return "Really cold . . ";
 	}
 	else {
-		return "Freezing.";
+		return "Freezing";
 	}
 };
 
@@ -45,10 +46,19 @@ var target = {
 	y: getRandomNumber(height)
 };
 
+console.log("Target coordinates: (" + target.x + ", " + target.y + ")");
+
 // Click event handler for the map image:
 $("#map").click(function (event) {
 	// Increment click counter:
 	clicks++;
+	if (clicks === 1) {
+		$("#attempts").text(clicks + " attempt");
+	}
+	else {
+		$("#attempts").text(clicks + " attempts");
+	}
+	console.log("Click coordinates: (" + event.offsetX + ", " + event.offsetY + ")");
 	// Get distance between click and target:
 	var distance = getDistance(event, target);
 	// Convert distance to hint:

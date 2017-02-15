@@ -22,7 +22,8 @@ FUTURE ITERATIONS:
 - Add a live X and Y coordinate display that changes as you hover over the image, telling you exactly where you are.
 - Add gameActive to disable click events once the game has been won.
 - Add a "Start New Game" button.
-- Add favicon.
 - Display click counter at all times.
 - Change font color and sizing of image license link.
 - Make CSS more concise by cascading IDs and CLASSES rather than repeating myself.
+- Add a dot to the screen for each click event, color-coded according to heat value.
+- Add a big red "X" when the treasure is clicked.
