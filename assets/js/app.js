@@ -57,6 +57,8 @@ var winner = function() {
 		$("#distance").text("YOU'RE RICH!!! YOU FOUND THE TREASURE in " + clicks + " clicks!!!");
 	}
 	gameActive = false;
+	// Hide the click counter:
+	document.querySelector("#attempts").style.display = "none";
 	// DISPLAY A START NEW GAME BUTTON, WHICH CALLS THE NEWGAME FUNCTION.
 };
 
