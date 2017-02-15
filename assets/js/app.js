@@ -18,8 +18,8 @@ var getRandomNumber = function(size) {
 
 // Use Pythagorean Theorem to calculate distance between click and target:
 var getDistance = function(event, target) {
-	var diffX = Math.abs(event.offsetX - target.x);
-	var diffY = Math.abs(event.offsetY - target.y);
+	var diffX = event.offsetX - target.x;
+	var diffY = event.offsetY - target.y;
 	console.log("diffX: " + diffX + ", diffY: " + diffY);
 	var pythag = Math.sqrt((diffX * diffX) + (diffY * diffY));
 	// console.log(pythag);
