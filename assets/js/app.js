@@ -2,6 +2,14 @@ var gameActive = true;
 var width 	= 736;
 var height 	= 653;
 var clicks	= 0;
+var target;
+
+if (gameActive) {
+	$("#init").text("Reset");
+}
+else {
+	$("#init").text("Start New Game");
+}
 
 // Get random number from 0 to size:
 var getRandomNumber = function(size) {
@@ -60,15 +68,8 @@ var winner = function() {
 	// Hide the click counter:
 	document.querySelector("#attempts").style.display = "none";
 	// DISPLAY A START NEW GAME BUTTON, WHICH CALLS THE NEWGAME FUNCTION.
+	$("#init").text("Start New Game");
 };
-
-// Create an object for random target location and store it in TARGET variable:
-var target = {
-	x: getRandomNumber(width),
-	y: getRandomNumber(height)
-};
-
-console.log("Target coordinates: (" + target.x + ", " + target.y + ")");
 
 // Click event handler for the map image:
 $("#map").click(function (event) {
@@ -89,10 +90,32 @@ $("#map").click(function (event) {
 		var distanceHint = getDistanceHint(distance);
 		// Update #distance hint in HTML:
 		$("#distance").text(distanceHint);
+		// Display the clicks and hints:
+		// document.querySelector("#attempts").style.display = "block";
+		// document.querySelector("#distance").style.display = "block";
 	}
 });
 
 var newGame = function() {
+	// Reset the click counter:
 	clicks = 0;
+	// Hide the click counter and hints:
+	$("#distance").text("");
+	$("#attempts").text("");
+	// document.querySelector("#attempts").style.display = "none";
+	// document.querySelector("#distance").style.display = "none";
+	getRandomNumber();
+	// Create an object for random target location and store it in TARGET variable:
+	target = {
+		x: getRandomNumber(width),
+		y: getRandomNumber(height)
+	};
+	console.log("Target coordinates: (" + target.x + ", " + target.y + ")");
 	gameActive = true;
 };
+
+// Initialize the game upon loading the page:
+newGame();
+
+// Event listener for the START NEW GAME button:
+document.querySelector("#init").addEventListener("click", newGame);
