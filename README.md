@@ -5,7 +5,7 @@ GAME RULES:
 - There is pirate treasure buried SOMEWHERE in this vicinity. Guess where it is, and click on that area of the map.
 - You will receive a clue as to how hot, warm, or cold you are.
 - Keep clicking on the map as you zero in on the treasure's location.
-- When you find the treasure, be sure drop me a line and thank me for 
+- When you find the treasure, be sure drop me a line and thank me for helping you find it.
 
 NEW CODING SKILLS LEARNED:
 
