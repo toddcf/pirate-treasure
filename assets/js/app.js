@@ -8,7 +8,9 @@ var getDistance = function(event, target) {
 	var diffX = Math.abs(event.offsetX - target.x);
 	var diffY = Math.abs(event.offsetY - target.y);
 	console.log("diffX: " + diffX + ", diffY: " + diffY);
-	return Math.sqrt((diffX * diffX) + (diffY * diffY));
+	var pythag = Math.sqrt((diffX * diffX) + (diffY * diffY));
+	// console.log(pythag);
+	return pythag;
 };
 
 // Determine which hint to give:
@@ -62,11 +64,12 @@ $("#map").click(function (event) {
 	console.log("Click coordinates: (" + event.offsetX + ", " + event.offsetY + ")");
 	// Get distance between click and target:
 	var distance = getDistance(event, target);
+	console.log("Distance = " + distance);
 	// Convert distance to hint:
 	var distanceHint = getDistanceHint(distance);
 	// Update #distance hint in HTML:
 	$("#distance").text(distanceHint);
-	// If within 8px, alert player that they won:
+	// If within 20px, alert player that they won:
 	if ((distance <= 20) && (clicks === 1)) {
 		$("#distance").text("YOU MUST HAVE ESP!!! YOU FOUND THE TREASURE in only one click!!!");
 	}
