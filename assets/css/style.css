@@ -14,7 +14,6 @@
 
 .pirate-scrawl {
 	font-family: 'Homemade Apple', cursive;
-	color: #c1b066;
 }
 
 #map {
@@ -39,18 +38,18 @@ button {
 .clues {
 	font-family: 'Pangolin', cursive;
 	font-size: 22px;
+	text-align: justify;
 }
 
 #init {
 	height: 40px;
 	width: 200px;
-	color: #c1b066;
 	font-size: 20px;
 	margin: 0 auto;
 }
 
 .copyright {
-	color: #c1b066;
+	font-size: 15px;
 }
 
 #distance, #attempts {
@@ -59,7 +58,6 @@ button {
 }
 
 .footer-text {
-	color: #c1b066;
 	font-size: 15px;
 	text-align: center;
 }
