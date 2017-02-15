@@ -24,7 +24,5 @@ NEW CODING SKILLS LEARNED:
 FUTURE ITERATIONS:
 
 - Store the user's last click in a variable and give them a hint as to whether their new click is "closer" or "farther" by comparison.
-- Change font color and sizing of image license link.
-- Make CSS more concise by cascading IDs and CLASSES rather than repeating myself.
 - Add a dot to the screen for each click event, color-coded according to heat value.
 - Add a big red "X" when the treasure is clicked.
