@@ -18,6 +18,11 @@
 	height: 652px;
 }
 
+.game-text {
+	width: 600px;
+	height: 100px;
+}
+
 .copyright {
 	color: #c1b066;
 }
