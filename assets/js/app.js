@@ -97,6 +97,7 @@ $("#map").click(function (event) {
 });
 
 var newGame = function() {
+	$("#init").text("Reset");
 	// Reset the click counter:
 	clicks = 0;
 	// Hide the click counter and hints:
