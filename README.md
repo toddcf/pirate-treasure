@@ -15,7 +15,6 @@ NEW CODING SKILLS LEARNED:
 FUTURE ITERATIONS:
 
 - Add gameplay instructions to HTML.
-- Try using Math.pi instead of the Pythagorean Theorem to calculate distance between click and target.
 - Store the user's last click in a variable and give them a hint as to whether their new click is "closer" or "farther" by comparison.
 - Add gameActive to disable click events once the game has been won.
 - Add a "Start New Game" button.

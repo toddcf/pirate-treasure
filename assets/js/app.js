@@ -8,7 +8,7 @@ var getDistance = function(event, target) {
 	var diffX = Math.abs(event.offsetX - target.x);
 	var diffY = Math.abs(event.offsetY - target.y);
 	console.log("diffX: " + diffX + ", diffY: " + diffY);
-	return Math.sqrt((diffX * diffY) + (diffX * diffY));
+	return Math.sqrt((diffX * diffX) + (diffY * diffY));
 };
 
 // Determine which hint to give:
