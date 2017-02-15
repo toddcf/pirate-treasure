@@ -28,7 +28,7 @@
 
 button {
 	margin: 0 auto;
-	/*display: block;*/
+	display: block;
 }
 
 #clue-header {
