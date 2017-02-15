@@ -1,3 +1,7 @@
+var width 	= 736;
+var height 	= 653;
+var clicks	= 0;
+
 // Get random number from 0 to size:
 var getRandomNumber = function(size) {
 	return Math.floor(Math.random() * size);
@@ -16,7 +20,10 @@ var getDistance = function(event, target) {
 // Determine which hint to give:
 // Change to switch statement?
 var getDistanceHint = function(distance) {
-	if (distance < 40) {
+	if (distance <= 20) {
+		winner();
+	}
+	else if (distance < 40) {
 		return "Boiling hot!";
 	}
 	else if (distance < 80) {
@@ -39,9 +46,16 @@ var getDistanceHint = function(distance) {
 	}
 };
 
-var width 	= 736;
-var height 	= 653;
-var clicks	= 0;
+var winner = function() {
+	// If within 20px, alert player that they won:
+	if (clicks === 1) {
+		$("#distance").text("YOU MUST HAVE ESP!!! YOU FOUND THE TREASURE in only one click!!!");
+	}
+	else if (clicks < 1) {
+		$("#distance").text("YOU'RE RICH!!! YOU FOUND THE TREASURE in " + clicks + " clicks!!!");
+	}
+	// Set gameActive to FALSE.
+}
 
 // Create an object for random target location and store it in TARGET variable:
 var target = {
@@ -69,11 +83,4 @@ $("#map").click(function (event) {
 	var distanceHint = getDistanceHint(distance);
 	// Update #distance hint in HTML:
 	$("#distance").text(distanceHint);
-	// If within 20px, alert player that they won:
-	if ((distance <= 20) && (clicks === 1)) {
-		$("#distance").text("YOU MUST HAVE ESP!!! YOU FOUND THE TREASURE in only one click!!!");
-	}
-	else if ((distance <= 20) && (clicks < 1)) {
-		$("#distance").text("YOU'RE RICH!!! YOU FOUND THE TREASURE in " + clicks + " clicks!!!");
-	}
 });
