@@ -24,6 +24,7 @@
 .game-text {
 	width: 600px;
 	height: 100px;
+	text-align: center;
 }
 
 button {
@@ -49,7 +50,7 @@ button {
 }
 
 .copyright {
-	font-size: 15px;
+	font-size: 12px;
 }
 
 #distance, #attempts {

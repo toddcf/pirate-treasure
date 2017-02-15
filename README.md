@@ -7,15 +7,22 @@ GAME RULES:
 - Keep clicking on the map as you zero in on the treasure's location.
 - When you find the treasure, be sure drop me a line and thank me for helping you find it.
 
+TECHNOLOGY:
+
+- JavaScript.
+- jQuery.
+- HTML5.
+- CSS3.
+- Twitter Bootstrap.
+
 NEW CODING SKILLS LEARNED:
 
 - Employing Pythagorean Theorem in JavaScript.
-- Using offset of click events.
-- Math.abs to convert a number to an absolute. (Although I later removed it because it turned out to not be necessary.)
+- Using "offset" of click events.
+- Math.abs to convert a number to an absolute. (Although I later removed it because it turned out not to be necessary.)
 
 FUTURE ITERATIONS:
 
-- Add gameplay instructions to HTML.
 - Store the user's last click in a variable and give them a hint as to whether their new click is "closer" or "farther" by comparison.
 - Change font color and sizing of image license link.
 - Make CSS more concise by cascading IDs and CLASSES rather than repeating myself.
