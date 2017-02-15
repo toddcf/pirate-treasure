@@ -14,16 +14,13 @@ NEW CODING SKILLS LEARNED:
 
 FUTURE ITERATIONS:
 
-- Add link to my portfolio.
-- Add link to my GitHub.
 - Add gameplay instructions to HTML.
 - Try using Math.pi instead of the Pythagorean Theorem to calculate distance between click and target.
 - Store the user's last click in a variable and give them a hint as to whether their new click is "closer" or "farther" by comparison.
-- Add a live X and Y coordinate display that changes as you hover over the image, telling you exactly where you are.
 - Add gameActive to disable click events once the game has been won.
 - Add a "Start New Game" button.
-- Display click counter at all times.
 - Change font color and sizing of image license link.
 - Make CSS more concise by cascading IDs and CLASSES rather than repeating myself.
 - Add a dot to the screen for each click event, color-coded according to heat value.
 - Add a big red "X" when the treasure is clicked.
+- Try changing getDistanceHint to a switch statement.

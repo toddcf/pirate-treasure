@@ -5,13 +5,14 @@ var getRandomNumber = function(size) {
 
 // Use Pythagorean Theorem to calculate distance between click and target:
 var getDistance = function(event, target) {
-	var diffX = event.offsetX - target.x;
-	var diffY = event.offsetY - target.y;
+	var diffX = Math.abs(event.offsetX - target.x);
+	var diffY = Math.abs(event.offsetY - target.y);
 	console.log("diffX: " + diffX + ", diffY: " + diffY);
 	return Math.sqrt((diffX * diffY) + (diffX * diffY));
 };
 
 // Determine which hint to give:
+// Change to switch statement?
 var getDistanceHint = function(distance) {
 	if (distance < 40) {
 		return "Boiling hot!";
