@@ -4,12 +4,10 @@ var height 	= 653;
 var clicks	= 0;
 var target;
 
-if (gameActive) {
+if (clicks == 0) {
 	$("#init").text("Reset");
 }
-else {
-	$("#init").text("Start New Game");
-}
+
 
 // Get random number from 0 to size:
 var getRandomNumber = function(size) {
@@ -74,6 +72,8 @@ var winner = function() {
 // Click event handler for the map image:
 $("#map").click(function (event) {
 	if (gameActive) {
+		// Display the start/reset button:
+		document.querySelector("button").style.display = "block";
 		// Increment click counter:
 		clicks++;
 		if (clicks === 1) {
@@ -90,9 +90,6 @@ $("#map").click(function (event) {
 		var distanceHint = getDistanceHint(distance);
 		// Update #distance hint in HTML:
 		$("#distance").text(distanceHint);
-		// Display the clicks and hints:
-		// document.querySelector("#attempts").style.display = "block";
-		// document.querySelector("#distance").style.display = "block";
 	}
 });
 
@@ -100,11 +97,10 @@ var newGame = function() {
 	$("#init").text("Reset");
 	// Reset the click counter:
 	clicks = 0;
-	// Hide the click counter and hints:
+	// Hide the click counter, hints, and start/reset button:
 	$("#distance").text("");
 	$("#attempts").text("");
-	// document.querySelector("#attempts").style.display = "none";
-	// document.querySelector("#distance").style.display = "none";
+	document.querySelector("button").style.display = "none";
 	getRandomNumber();
 	// Create an object for random target location and store it in TARGET variable:
 	target = {
