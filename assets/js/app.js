@@ -47,16 +47,18 @@ var getDistanceHint = function(distance) {
 	}
 };
 
+// What to do if the player wins:
 var winner = function() {
 	// If within 20px, alert player that they won:
 	if (clicks === 1) {
 		$("#distance").text("YOU MUST HAVE ESP!!! YOU FOUND THE TREASURE in only one click!!!");
 	}
-	else if (clicks < 1) {
+	else if (clicks > 1) {
 		$("#distance").text("YOU'RE RICH!!! YOU FOUND THE TREASURE in " + clicks + " clicks!!!");
 	}
 	gameActive = false;
-}
+	// DISPLAY A START NEW GAME BUTTON, WHICH CALLS THE NEWGAME FUNCTION.
+};
 
 // Create an object for random target location and store it in TARGET variable:
 var target = {
@@ -87,3 +89,8 @@ $("#map").click(function (event) {
 		$("#distance").text(distanceHint);
 	}
 });
+
+var newGame = function() {
+	clicks = 0;
+	gameActive = true;
+};
