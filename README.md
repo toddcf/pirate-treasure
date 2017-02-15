@@ -11,6 +11,7 @@ NEW CODING SKILLS LEARNED:
 
 - Employing Pythagorean Theorem in JavaScript.
 - Using offset of click events.
+- Math.abs to convert a number to an absolute. (Although I later removed it because it turned out to not be necessary.)
 
 FUTURE ITERATIONS:
 
