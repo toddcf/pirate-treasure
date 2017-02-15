@@ -1,3 +1,4 @@
+var gameActive = true;
 var width 	= 736;
 var height 	= 653;
 var clicks	= 0;
@@ -54,7 +55,7 @@ var winner = function() {
 	else if (clicks < 1) {
 		$("#distance").text("YOU'RE RICH!!! YOU FOUND THE TREASURE in " + clicks + " clicks!!!");
 	}
-	// Set gameActive to FALSE.
+	gameActive = false;
 }
 
 // Create an object for random target location and store it in TARGET variable:
@@ -67,20 +68,22 @@ console.log("Target coordinates: (" + target.x + ", " + target.y + ")");
 
 // Click event handler for the map image:
 $("#map").click(function (event) {
-	// Increment click counter:
-	clicks++;
-	if (clicks === 1) {
-		$("#attempts").text(clicks + " attempt");
+	if (gameActive) {
+		// Increment click counter:
+		clicks++;
+		if (clicks === 1) {
+			$("#attempts").text(clicks + " attempt");
+		}
+		else {
+			$("#attempts").text(clicks + " attempts");
+		}
+		console.log("Click coordinates: (" + event.offsetX + ", " + event.offsetY + ")");
+		// Get distance between click and target:
+		var distance = getDistance(event, target);
+		console.log("Distance = " + distance);
+		// Convert distance to hint:
+		var distanceHint = getDistanceHint(distance);
+		// Update #distance hint in HTML:
+		$("#distance").text(distanceHint);
 	}
-	else {
-		$("#attempts").text(clicks + " attempts");
-	}
-	console.log("Click coordinates: (" + event.offsetX + ", " + event.offsetY + ")");
-	// Get distance between click and target:
-	var distance = getDistance(event, target);
-	console.log("Distance = " + distance);
-	// Convert distance to hint:
-	var distanceHint = getDistanceHint(distance);
-	// Update #distance hint in HTML:
-	$("#distance").text(distanceHint);
 });

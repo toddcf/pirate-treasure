@@ -22,4 +22,3 @@ FUTURE ITERATIONS:
 - Make CSS more concise by cascading IDs and CLASSES rather than repeating myself.
 - Add a dot to the screen for each click event, color-coded according to heat value.
 - Add a big red "X" when the treasure is clicked.
-- Try changing getDistanceHint to a switch statement.
