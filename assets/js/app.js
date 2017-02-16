@@ -57,10 +57,10 @@ var getDistanceHint = function(distance) {
 var winner = function() {
 	// If within 20px, alert player that they won:
 	if (clicks === 1) {
-		$("#distance").text("YOU MUST HAVE ESP!!! YOU FOUND THE TREASURE in only one click!!!");
+		$("#distance").text("You must have ESP!!! You found the treasure in only one click!!!");
 	}
 	else if (clicks > 1) {
-		$("#distance").text("YOU'RE RICH!!! YOU FOUND THE TREASURE in " + clicks + " clicks!!!");
+		$("#distance").text("You're rich!!! You found the treasure in " + clicks + " clicks!!!");
 	}
 	gameActive = false;
 	// Hide the click counter:
