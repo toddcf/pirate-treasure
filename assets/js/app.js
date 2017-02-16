@@ -64,7 +64,7 @@ var winner = function() {
 	}
 	gameActive = false;
 	// Hide the click counter:
-	document.querySelector("#attempts").style.display = "none";
+	$("#attempts").text("");
 	// DISPLAY A START NEW GAME BUTTON, WHICH CALLS THE NEWGAME FUNCTION.
 	$("#init").text("Start New Game");
 };
