@@ -1,5 +1,7 @@
 # Pirate Treasure
 
+![Pirate Treasure](https://github.com/toddcf/pirate-treasure/blob/master/assets/img/map1300x1152.jpg "Pirate Treasure")
+
 GAME RULES:
 
 - There is pirate treasure buried SOMEWHERE in this vicinity. Guess where it is, and click on that area of the map.
