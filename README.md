@@ -1,6 +1,6 @@
 # Pirate Treasure
 
-![Pirate Treasure](https://github.com/toddcf/pirate-treasure/blob/master/assets/img/map1300x1152.jpg "Pirate Treasure")
+![Pirate Treasure](https://github.com/toddcf/pirate-treasure/blob/master/assets/img/map735x652.jpg "Pirate Treasure")
 
 GAME RULES:
 
